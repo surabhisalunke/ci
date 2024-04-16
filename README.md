@@ -1,7 +1,5 @@
 # ci
-docker run -d -p 5000:5000 -e PORT=5000 \
-
--e LOCATION_URL=http://localhost:5001 \ dotnetcoreservices/teamservice:location
+docker run -d -p 5000:5000 -e PORT=5000 -e LOCATION_URL=http://localhost:5001 \dotnetcoreservices/teamservice:location
 
 docker run -d -p 5001:5001 -e PORT=5001 dotnetcoreservices/locationservice:nodb
 
